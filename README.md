@@ -1,1 +1,1 @@
-DesignPatterns
+Design pattern practice repository.
