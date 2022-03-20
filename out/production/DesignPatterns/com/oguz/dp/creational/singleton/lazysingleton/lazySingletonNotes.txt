@@ -1,0 +1,5 @@
+Javada static fieldlar nesnelerden daha önce initialize idilirler.Sınıf yüklenirken initialize edilirler.
+Lazy singleton amacı nesnenin ihtiyaç duyulduğu zaman oluşturlmasını sağlamak.
+Lazy loading kullanılır.
+Multi-threaded ortamlarda probleme yol açar.
+null kontrolünü aynı anda birden fazla threadin yapması birden fazla singleton nesne oluşmasına sebep olur.
