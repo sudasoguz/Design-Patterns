@@ -1,4 +1,4 @@
-package com.oguz.dp.creational.singleton.lazysingleton;
+package com.oguz.dp.creational.singleton.singleton;
 
 public class ThreadSafeLazySingleton {
     private static ThreadSafeLazySingleton threadSafeLazySingleton;

@@ -1,4 +1,4 @@
-package com.oguz.dp.creational.singleton.lazysingleton;
+package com.oguz.dp.creational.singleton.singleton;
 
 public class LazySingleton {
     private static LazySingleton lazySingleton;
@@ -7,7 +7,7 @@ public class LazySingleton {
 
     private LazySingleton() {
         count++;
-        System.out.println("Lazy Singleton : " + count);
+        name = "Lazy Singleton : " + count;
     }
 
     public static LazySingleton getInstance() {
