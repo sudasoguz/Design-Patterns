@@ -1,3 +1,0 @@
-Bir sınıftan veya bir nesneden sadece bir tane oluşturulması be bu sınıfa global erişim sağlanması hedeflenir.
-Bunu sağlamak içinde nesnenin constructer metodunu private yapıp nesnenin çağırıldığı yerlerde
-getInstance medotu ile çağırılması sağlanır.Böylece sadece bir nesne oluştrulmuş olur.
