@@ -1,4 +1,4 @@
-package com.oguz.dp.creational.singleton.singleton;
+package com.oguz.dp.creational.singleton;
 
 public class BillPughSingleton {
     private static int count;
