@@ -1,1 +1,1 @@
-Design pattern practice repository.
+Design patterns with JAVA
