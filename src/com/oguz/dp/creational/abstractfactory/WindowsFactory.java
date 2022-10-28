@@ -1,14 +1,14 @@
 package com.oguz.dp.creational.abstractfactory;
 
-public class WindowsFactory implements IGUIFactory{
+public class WindowsFactory implements IGUIFactory {
 
-    @Override
-    public IButton createButton() {
-        return new WindowsButton();
-    }
+  @Override
+  public IButton createButton() {
+    return new WindowsButton();
+  }
 
-    @Override
-    public ICheckbox createCheckbox() {
-        return new WindowsCheckbox();
-    }
+  @Override
+  public ICheckbox createCheckbox() {
+    return new WindowsCheckbox();
+  }
 }

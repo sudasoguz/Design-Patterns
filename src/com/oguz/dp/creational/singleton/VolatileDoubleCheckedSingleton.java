@@ -1,27 +1,27 @@
 package com.oguz.dp.creational.singleton;
 
 public class VolatileDoubleCheckedSingleton {
-    private static volatile VolatileDoubleCheckedSingleton singleton;
-    private static int count;
-    private String name;
+  private static volatile VolatileDoubleCheckedSingleton singleton;
+  private static int count;
+  private String name;
 
-    private VolatileDoubleCheckedSingleton() {
-        count++;
-        name = "VolatileDoubleCheckedSingleton : " + count;
-    }
+  private VolatileDoubleCheckedSingleton() {
+    count++;
+    name = "VolatileDoubleCheckedSingleton : " + count;
+  }
 
-    public VolatileDoubleCheckedSingleton getInstance() {
+  public VolatileDoubleCheckedSingleton getInstance() {
+    if (singleton == null) {
+      synchronized (VolatileDoubleCheckedSingleton.class) {
         if (singleton == null) {
-            synchronized (VolatileDoubleCheckedSingleton.class) {
-                if (singleton == null) {
-                    singleton = new VolatileDoubleCheckedSingleton();
-                }
-            }
+          singleton = new VolatileDoubleCheckedSingleton();
         }
-        return singleton;
+      }
     }
+    return singleton;
+  }
 
-    public void printName() {
-        System.out.println(name);
-    }
+  public void printName() {
+    System.out.println(name);
+  }
 }

@@ -2,7 +2,7 @@ package com.oguz.dp.creational.abstractfactory;
 
 public interface IGUIFactory {
 
-    IButton createButton();
+  IButton createButton();
 
-    ICheckbox createCheckbox();
+  ICheckbox createCheckbox();
 }

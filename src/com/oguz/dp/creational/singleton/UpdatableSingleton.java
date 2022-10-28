@@ -5,28 +5,28 @@ import java.util.Map;
 
 public class UpdatableSingleton {
 
-    private static UpdatableSingleton updatableSingleton = new UpdatableSingleton();
+  private static UpdatableSingleton updatableSingleton = new UpdatableSingleton();
 
-    private Map<String,Integer> products = new HashMap<>();
+  private Map<String, Integer> products = new HashMap<>();
 
-    private UpdatableSingleton(){
-        products.put("Book",20);
-        products.put("Pen",5);
-        products.put("Eraser",2);
-    }
+  private UpdatableSingleton() {
+    products.put("Book", 20);
+    products.put("Pen", 5);
+    products.put("Eraser", 2);
+  }
 
-    public static UpdatableSingleton getInstance(){
-        return updatableSingleton;
-    }
+  public static UpdatableSingleton getInstance() {
+    return updatableSingleton;
+  }
 
-    public synchronized void updateProduct(String threadName, String name, Integer price) throws InterruptedException {
-        System.out.println(threadName + "==> Price for " + name + "before update : " + getPrice(name));
-        Thread.sleep(100);
-        products.put(name,price);
-        System.out.println(threadName + "==> Price for " + name + "after update : " + getPrice(name));
-    }
+  public synchronized void updateProduct(String threadName, String name, Integer price) throws InterruptedException {
+    System.out.println(threadName + "==> Price for " + name + "before update : " + getPrice(name));
+    Thread.sleep(100);
+    products.put(name, price);
+    System.out.println(threadName + "==> Price for " + name + "after update : " + getPrice(name));
+  }
 
-    private Integer getPrice(String name){
-        return products.get(name);
-    }
+  private Integer getPrice(String name) {
+    return products.get(name);
+  }
 }

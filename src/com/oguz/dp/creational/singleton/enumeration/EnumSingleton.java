@@ -4,13 +4,13 @@ import java.io.Serializable;
 
 public enum EnumSingleton implements Serializable {
 
-    SINGLETON;
+  SINGLETON;
 
-    private EnumSingleton(){
-        System.out.println("in EnumSingleton() ");
-    }
+  private EnumSingleton() {
+    System.out.println("in EnumSingleton() ");
+  }
 
-    public static EnumSingleton getInstance(){
-        return SINGLETON;
-    }
+  public static EnumSingleton getInstance() {
+    return SINGLETON;
+  }
 }

@@ -1,9 +1,9 @@
 package com.oguz.dp.creational.abstractfactory;
 
-public class MacOSButton implements IButton{
+public class MacOSButton implements IButton {
 
-    @Override
-    public void paint() {
-        System.out.println("You have created MacOSButton");
-    }
+  @Override
+  public void paint() {
+    System.out.println("You have created MacOSButton");
+  }
 }

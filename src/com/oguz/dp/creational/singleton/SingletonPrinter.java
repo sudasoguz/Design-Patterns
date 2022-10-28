@@ -1,21 +1,21 @@
 package com.oguz.dp.creational.singleton;
 
 public class SingletonPrinter {
-    private static SingletonPrinter singletonPrinter = new SingletonPrinter();
+  private static SingletonPrinter singletonPrinter = new SingletonPrinter();
 
-    private static int count;
-    private String name;
+  private static int count;
+  private String name;
 
-    private SingletonPrinter() {
-        count++;
-        name = "Printer number : " + count;
-    }
+  private SingletonPrinter() {
+    count++;
+    name = "Printer number : " + count;
+  }
 
-    public static SingletonPrinter getInstance() {
-        return singletonPrinter;
-    }
+  public static SingletonPrinter getInstance() {
+    return singletonPrinter;
+  }
 
-    public void printName() {
-        System.out.println(name);
-    }
+  public void printName() {
+    System.out.println(name);
+  }
 }
